@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="icon" href="images/icon.png">
+	<title>Calculator</title>
+</head>s
+<body>
+
+
+	<div class="container py-5 my-5">
+		<div class="row justify-content-center">
+			<div class=" col-sm-5">
+				<div class="content">
+					<input id="show" type="text" readonly="readonly" class="form-control bg-secondary text-light" >
+				<div class="row no-gutters">
+					<button class="btn-sm btn-info col-3" onclick="One()">1</button>
+				    <button class="btn-sm btn-info col-3" onclick="Two()">2</button>
+				    <button class="btn-sm btn-info col-3" onclick="Thr()">3</button>
+				    <button class="btn-sm btn-secondary col-3" onclick="Div()">/</button>
+				</div>
+				<div class="row no-gutters">
+					<button class="btn-sm btn-info col-3" onclick="Fou()">4</button>
+					<button class="btn-sm btn-info col-3" onclick="Fiv()">5</button>
+				    <button class="btn-sm btn-info col-3" onclick="Six()">6</button>
+				    <button class="btn-sm btn-secondary col-3" onclick="Mul()">*</button>
+				</div>
+				<div class="row no-gutters">
+					<button class="btn-sm btn-info col-3" onclick="Sev()">7</button>
+				    <button class="btn-sm btn-info col-3" onclick="Eig()">8</button>
+					<button class="btn-sm btn-info col-3" onclick="Nin()">9</button>
+				    <button class="btn-sm btn-secondary col-3" onclick="Sub()">-</button>
+				</div>
+				<div class="row no-gutters">
+					<button class="btn-sm btn-info col-3" onclick="Dlt()">Dlt</button>
+					<button class="btn-sm btn-info col-3" onclick="Zer()">0</button>
+					<button class="btn-sm btn-info col-3" onclick="Dot()">.</button>
+                    <button class="btn-sm btn-secondary col-3" onclick="Add()">+</button>    
+				</div>
+				<div class="row no-gutters">
+					<button class="btn-sm btn-secondary col-6" onclick="Clr()">A/C</button>
+					<button class="btn-sm btn-secondary col-6" onclick="Equ()">=</button>
+				   
+				    
+				</div>
+
+
+
+				</div>
+
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+
+		var e = document.getElementById('show');
+
+		function One(){
+
+			e.value +="1";
+		}
+		function Two(){
+			
+			e.value +="2";
+		}
+		function Thr(){
+			
+			e.value +="3";
+		}
+		function Fou(){
+
+			e.value +="4";
+		}
+		function Fiv(){
+			
+			e.value +="5";
+		}
+		function Six(){
+			
+			e.value +="6";
+		}
+		function Sev(){
+
+			e.value +="7";
+		}
+		function Eig(){
+			
+			e.value +="8";
+		}
+		function Nin(){
+			
+			e.value +="9";
+		}
+		function Zer(){
+			
+			e.value +="0";
+		}
+		
+
+		function Add(){
+			
+			e.value +="+";
+		}
+		function Sub(){
+			
+			e.value +="-";
+		}
+		function Div(){
+
+			e.value +="/";
+		}
+		function mul(){
+			
+			e.value +="*";
+		}
+		function Equ(){
+			e.value = eval(e.value);
+			
+		}
+		function Dot(){
+			
+			e.value +=".";
+		}
+
+		function Clr(){
+			e.value = "";
+			
+			
+		}
+		function mul(){
+			
+			e.value +="*";
+		}
+		function Dlt(){
+			
+			var a = e.value;
+			e.value = a.substring(0,a.length -1)
+		}
+
+
+
+
+	</script>
+
+
+
+
+
+</body>
+</html>
